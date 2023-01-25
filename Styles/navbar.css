@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#social_connect {
+  margin-top: 80px;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  color: grey;
+}
+#cc {
+  color: grey;
+  font-size: 12px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+#cart {
+  display: flex;
+  justify-content: center;
+}
+#lblCartCount {
+  width: 5px;
+  height: 15px;
+  font-size: 10px;
+  background: coral;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  margin-left: -18px;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+/* SIDEBAR */
+#hari_wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.428);
+  z-index: 9;
+}
+#hari_sidebar {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 41%;
+  height: 100%;
+  transition: all 0.5s ease;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+#hari_sidebar_logo_and_btn {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+#hari_sidebar_logo_and_btn > div:nth-child(1) {
+  flex: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#hari_sidebar_logo_and_btn > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+#hari_sidebar_logo_and_btn > div:nth-child(2) > i {
+  cursor: pointer;
+}
+#hari_sidebar_logo_and_btn > div > img {
+  width: 60%;
+  cursor: pointer;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: coral;
+}
+#hari_sidebar_buttons {
+  width: 85%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+i:hover {
+  color: coral;
+}
+#hari_sidebar_buttons a {
+  font-size: 18px;
+  font-weight: 600;
+}
+#hari_sidebar_categories {
+  display: flex;
+  justify-content: space-between;
+}
+#hari_sidebar_categories_list {
+  display: none;
+  padding: 0px 10px;
+}
+#hari_sidebar_categories_list > div:hover {
+  color: coral;
+  cursor: pointer;
+}
+#clothing_sidebar_btn,
+#footwear_sidebar_btn,
+#electric_sidebar_btn,
+#health_sidebar_btn,
+#jewellery_sidebar_btn,
+#industrial_sidebar_btn,
+#kitchen_sidebar_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#clothing,
+#footwear,
+#electric,
+#health,
+#jewellery,
+#industrial,
+#kitchen {
+  display: none;
+  padding: 0px 15px;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+#hari_navbar_1 {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 1;
+  padding: 10px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  z-index: 999;
+}
+#hari_logo {
+  /* border: 1px solid red; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hari_logo > a > img {
+  width: 40%;
+  margin: auto;
+  margin-left: 20%;
+  /* border: 1px solid red; */
+}
+#hari_nav_buttons {
+  /* border: 1px solid red; */
+  flex: 1.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/*  */
+#hari_list_a {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#hari_list_a > li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  font-size: 90%;
+}
+#hari_list_a > li > a {
+  color: grey;
+  text-decoration: none;
+  display: block;
+}
+.dropdown {
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 140%;
+  list-style: none;
+  text-align: left;
+  visibility: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+.dropdown > li > a {
+  margin-left: -10px;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+#hari_list_a > li > a {
+  color: black;
+}
+#hari_list_a > li > a:hover {
+  color: coral;
+}
+
+#hari_categories a {
+  color: black;
+}
+#hari_categories a:hover {
+  color: coral;
+}
+#hari_categories:hover > .dropdown {
+  visibility: visible;
+  top: 100%;
+}
+
+.dropdown_a {
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  text-align: left;
+  visibility: hidden;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: -30px;
+  margin-left: -20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  z-index: 1;
+}
+#hari_list_a:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+#hari_list_b:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+
+#hari_list_c:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+#hari_list_d:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+#hari_list_e:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+#hari_list_f:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+/* STYLES NAVBAR_2 */
+#hari_nav_design_2 {
+  width: 100%;
+}
+#hari_navbar_2 {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#hari_ham {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#hari_ham > i {
+  cursor: pointer;
+}
+#hari_logo_b {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hari_logo_b > a {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hari_user_buttons_a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+  gap: 5px;
+}
+#hari_user_buttons_b {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  gap: 5px;
+}
+
+#hari_user_buttons_a > div > svg {
+  width: 70%;
+  cursor: pointer;
+}
+#hari_user_buttons_a > div:nth-child(4) > svg {
+  width: 70%;
+  margin-top: -5px;
+}
+#hari_user_buttons_b > div:nth-child(4) > svg {
+  width: 70%;
+  margin-top: -5px;
+}
+#hari_user_buttons_b > div > svg {
+  width: 70%;
+  cursor: pointer;
+}
+/*  */
+#hari_logo_b > a > img {
+  width: 50%;
+}
+/*MEDIA QUERY */
+@media screen and (min-width: 1025px) {
+  #hari_nav_design_2 {
+    display: none;
+  }
+  #hari_sidebar {
+    display: none;
+  }
+  #hari_wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+  #hari_navbar_1 {
+    display: none;
+  }
+  #hari_nav_design_2 {
+    display: block;
+  }
+  #hari_wrapper {
+    display: none;
+  }
+}
+#cart svg {
+  width: 65%;
+}
